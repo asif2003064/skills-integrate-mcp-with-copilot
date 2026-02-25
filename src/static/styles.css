@@ -22,10 +22,94 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  position: relative;
 }
 
 header h1 {
   margin-bottom: 10px;
+}
+
+/* User menu / login dropdown */
+#user-menu {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+#user-icon {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+#user-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#user-dropdown {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  background: white;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 18px;
+  width: 240px;
+  z-index: 100;
+  text-align: left;
+}
+
+#user-dropdown h4 {
+  margin-bottom: 12px;
+  color: #1a237e;
+}
+
+#user-dropdown input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#login-btn,
+#logout-btn {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+#logout-btn {
+  background-color: #c62828;
+}
+
+#logout-btn:hover {
+  background-color: #e53935;
+}
+
+#login-error {
+  color: #c62828;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+#logged-in-section p {
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 main {

@@ -10,6 +10,22 @@
     <header>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
+      <div id="user-menu">
+        <button id="user-icon" title="Teacher Login">👤</button>
+        <div id="user-dropdown" class="hidden">
+          <div id="login-section">
+            <h4>Teacher Login</h4>
+            <input type="text" id="login-username" placeholder="Username" />
+            <input type="password" id="login-password" placeholder="Password" />
+            <button id="login-btn">Log In</button>
+            <p id="login-error" class="hidden"></p>
+          </div>
+          <div id="logged-in-section" class="hidden">
+            <p>Logged in as <strong id="logged-in-user"></strong></p>
+            <button id="logout-btn">Log Out</button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -21,7 +37,7 @@
         </div>
       </section>
 
-      <section id="signup-container">
+      <section id="signup-container" class="hidden">
         <h3>Sign Up for an Activity</h3>
         <form id="signup-form">
           <div class="form-group">
